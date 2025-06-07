@@ -167,7 +167,7 @@ Each script run will generate a dedicated subdirectory for its results, containi
 If you use this work, please cite our paper:
 
 ```
-[Citation to be added after publication]
+
 Zhiwei Zhang, et al. "LSRM: A Hybrid LLM-SBERT Approach for Mapping User Requirements to Product Functionalities in Complex Products." In Proceedings of the IEEE International Requirements Engineering Conference (RE), 2025. 
 ```
 
