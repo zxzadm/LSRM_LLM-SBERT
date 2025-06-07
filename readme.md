@@ -1,4 +1,4 @@
-# LSRM: A Hybrid LLM-SBERT Approach - Replication Package
+# LSRM: A Hybrid LLM-SBERT Approach for Mapping User Requirements to Product Functionalities in Complex Products
 
 This repository contains the replication package for the paper "LSRM: A Hybrid LLM-SBERT Approach for Mapping User Requirements to Product Functionalities in Complex Products," submitted to RE 2025.
 
@@ -102,7 +102,7 @@ python src/qa_zeroshot_baseline.py \
     --requirements_source_csv "data/product_functionalities.csv" \
     --llm_api_base "YOUR_LLM_API_BASE_URL" \
     --llm_api_key "YOUR_LLM_API_KEY" \
-    --llm_model_name "gemini-pro" \
+    --llm_model_name "gemini-2.0-flash" \
     --output_dir "results/baselines"
 ```
 *   **Warning:** This script makes a large number of API calls. Use the `--num_rows_comments N` argument with a small `N` for initial testing.
@@ -119,7 +119,7 @@ python src/ablation_exp.py \
     --sbert_model_path "all-MiniLM-L6-v2" \
     --llm_api_base "YOUR_LLM_API_BASE_URL" \
     --llm_api_key "YOUR_LLM_API_KEY" \
-    --llm_model_name "gemini-pro" \
+    --llm_model_name "gemini-2.0-flash" \
     --output_dir "results/lsrm_ablation_study"
 ```
 
@@ -138,7 +138,7 @@ python src/llm_api_comparison.py \
     --sbert_model_path "all-MiniLM-L6-v2" \
     --llm_api_base "YOUR_LLM_API_BASE_URL" \
     --llm_api_key "YOUR_LLM_API_KEY" \
-    --llm_model_name "gpt-4o-mini" \
+    --llm_model_name "gemini-2.0-flash" \
     --output_dir "results/llm_comparison"
 ```
 
@@ -167,10 +167,9 @@ Each script run will generate a dedicated subdirectory for its results, containi
 If you use this work, please cite our paper:
 
 ```
-
 Zhiwei Zhang, et al. "LSRM: A Hybrid LLM-SBERT Approach for Mapping User Requirements to Product Functionalities in Complex Products." In Proceedings of the IEEE International Requirements Engineering Conference (RE), 2025. 
 ```
 
 ## Contact
 
-For questions regarding this replication package, please contact Zhiwei Zhang at `zhangzhiwei1019@link.cuhk.edu.hk`.
+For questions regarding this replication package, please contact me at `zhangzhiwei1019@link.cuhk.edu.hk`.
